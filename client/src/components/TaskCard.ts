@@ -97,9 +97,10 @@ if (editPriority instanceof HTMLSelectElement) {
 }
 
 const editDueDate = document.getElementById("edit-due-date");
-
 if (editDueDate instanceof HTMLInputElement) {
-    editDueDate.value = task.due_date;
+
+    editDueDate.value = task.due_date.split("T")[0];
+
 }
         document
             .getElementById("edit-modal")
