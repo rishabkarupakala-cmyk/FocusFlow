@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api/tasks";
+const BASE_URL = "https://focusflow-production-0719.up.railway.app/api/tasks";
 
 function getAuthHeaders() {
 

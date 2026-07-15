@@ -1,5 +1,4 @@
-const BASE_URL = "http://localhost:5000/api/auth";
-
+const BASE_URL = "https://focusflow-production-0719.up.railway.app/api/tasks";
 export async function login(email: string, password: string) {
 
     const response = await fetch(`${BASE_URL}/login`, {
