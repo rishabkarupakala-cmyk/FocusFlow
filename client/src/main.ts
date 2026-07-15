@@ -1,6 +1,14 @@
+
 import "./style.css";
 import { isLoggedIn } from "./utils/auth";
 import { logout } from "./utils/auth";
+// Protect dashboard
+const token = sessionStorage.getItem("token");
+
+if (!token) {
+    window.location.href = "/login.html";
+}
+
 if (!isLoggedIn()) {
 
     window.location.href = "/login.html";

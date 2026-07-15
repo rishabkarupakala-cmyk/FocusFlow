@@ -25,12 +25,12 @@ if (form instanceof HTMLFormElement) {
                 password.value
             );
 
-            localStorage.setItem(
+            sessionStorage.setItem(
                 "token",
                 result.token
             );
 
-            localStorage.setItem(
+            sessionStorage.setItem(
                 "user",
                 JSON.stringify(result.user)
             );

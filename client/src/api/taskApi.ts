@@ -2,7 +2,7 @@ const BASE_URL = "https://focusflow-production-0719.up.railway.app/api/tasks";
 
 function getAuthHeaders() {
 
-    const token = localStorage.getItem("token");
+    const token = sessionStorage.getItem("token");
 
     return {
 
