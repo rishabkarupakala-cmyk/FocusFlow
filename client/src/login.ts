@@ -35,7 +35,7 @@ if (form instanceof HTMLFormElement) {
                 JSON.stringify(result.user)
             );
 
-            alert("Login Successful!");
+           
 
             window.location.href = "/";
 
